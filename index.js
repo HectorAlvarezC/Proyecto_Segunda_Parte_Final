@@ -7,10 +7,10 @@ const port = 3000;
 
 // Configurar la conexión a la base de datos
 const connection = mysql.createConnection({
-    host: 'localhost',
+    host: 'mysql.railway.internal',
     user: 'root',
-    password: 'Noloolvid3s',
-    database: 'PaginaWeb'
+    password: 'ycUEsAhdUpHgMMzLOvsEVBuZGXtSjNFz',
+    database: 'railway'
 });
 
 connection.connect(err => {
@@ -57,7 +57,7 @@ app.post('/comprar', (req, res) => {
 
 // Iniciar el servidor
 app.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${port}`);
+    console.log(`Servidor corriendo.`);
 });
 
 //=================================================== PARTE DEL BACKEND ===================================================//
