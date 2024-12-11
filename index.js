@@ -7,7 +7,7 @@ const port = 3000;
 
 // Configurar la conexión a la base de datos
 const connection = mysql.createConnection({
-    host: 'mysql.railway.internal',
+    host: 'autorack.proxy.rlwy.net',
     user: 'root',
     password: 'ycUEsAhdUpHgMMzLOvsEVBuZGXtSjNFz',
     database: 'railway'
