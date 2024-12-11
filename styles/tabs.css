@@ -1,0 +1,26 @@
+/* Estilando los botones de las pestañas */
+.tabs {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #d6a97c;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #a5755a;
+}
+
+.tab-button.active {
+    background-color: #6f4c3b; /* Botón activo con mejor color */
+}

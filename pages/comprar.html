@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elige tu platillo - Mexican Restaurant</title>
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="stylesheet" href="../styles/banner.css">
+  <link rel="stylesheet" href="../styles/cajas.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/promocion.css">
+  <link rel="stylesheet" href="../styles/localizacion.css">
+  <link rel="stylesheet" href="../styles/comprar.css">
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+</head>
+<body>
+     <!-- Menú de navegación fijo -->
+     <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../images/Logotipo-MexicanRestaurant.png" alt="Logo" height="30">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#carrito">Carrito</a></li>
+            <li><a href="#perfil"><img src="../images/Icono-de-perfil.png" alt="Perfil" height="30" class="profile-icon"></a></li>
+        </ul>
+    </nav>
+  <header>
+    <h1>¡Elige tu Platillo Favorito!</h1>
+  </header>
+
+  <main>
+    <div class="contenedor-comida">
+      <!-- Sección para platillos -->
+      <div class="platillo">
+        <img src="../images/Paquete_1-Mole.png" alt="Platillo 1">
+        <h3>Pizza Margarita</h3>
+        <p>$10.99</p>
+        <button onclick="comprar('Pizza Margarita')">Comprar</button>
+      </div>
+      <div class="platillo">
+        <img src="../images/Paquete_2-Pozole.png" alt="Platillo 2">
+        <h3>Tacos al Pastor</h3>
+        <p>$8.99</p>
+        <button onclick="comprar('Tacos al Pastor')">Comprar</button>
+      </div>
+      <div class="platillo">
+        <img src="../images/Paquete_3-Carnitas.png" alt="Platillo 3">
+        <h3>Hamburguesa Clásica</h3>
+        <p>$9.99</p>
+        <button onclick="comprar('Hamburguesa Clásica')">Comprar</button>
+      </div>
+      <div class="platillo">
+        <img src="../images/Paquete_4-Pescado_Veracruzano.png" alt="Platillo 4">
+        <h3>Pasta Carbonara</h3>
+        <p>$12.99</p>
+        <button onclick="comprar('Pasta Carbonara')">Comprar</button>
+      </div>
+      <div class="platillo">
+        <img src="../images/Paquete_5-Chiles_Nogada.png" alt="Platillo 5">
+        <h3>Pollo al Curry</h3>
+        <p>$11.99</p>
+        <button onclick="comprar('Pollo al Curry')">Comprar</button>
+      </div>
+      <div class="platillo">
+        <img src="../images/Paquete_6-Tlayudas.png" alt="Platillo 6">
+        <h3>Sushi Variado</h3>
+        <p>$14.99</p>
+        <button onclick="comprar('Sushi Variado')">Comprar</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function comprar(platillo) {
+      alert(`¡Has seleccionado ${platillo}! Procederás al pago.`);
+    }
+  </script>
+</body>
+</html>

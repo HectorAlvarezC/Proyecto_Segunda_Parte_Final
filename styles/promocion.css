@@ -1,0 +1,57 @@
+/* Estilo para la sección de promoción */
+.seccion-promocion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-top: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    margin: 20px 0;
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para la imagen de la promoción */
+.promocion-imagen {
+    flex: 1;
+    max-width: 50%; /* Limita la imagen a la mitad de la pantalla */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el contenido de texto */
+.promocion-contenido {
+    flex: 1;
+    max-width: 50%; /* Limita el texto a la mitad de la pantalla */
+    padding: 20px;
+}
+
+.promocion-contenido h2 {
+    font-size: 2.5rem;
+    color: #d81e17; /* Color que resalta, puedes ajustarlo */
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.promocion-contenido p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.promocion-boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.promocion-boton:hover {
+    background-color: #c9302c; /* Color más oscuro al pasar el mouse */
+}

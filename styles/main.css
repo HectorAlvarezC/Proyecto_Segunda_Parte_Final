@@ -1,0 +1,86 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo base para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Banner Principal */
+.banner {
+    background: url('../images/banner.jpg') no-repeat center center/cover; /* Ruta de la imagen del banner */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.banner-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Capa de fondo oscuro para mejorar el texto */
+    border-radius: 10px;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.banner-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner-content button:hover {
+    background-color: #218838;
+}
+
+/* Sección de Introducción */
+.introduccion {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #28a745;
+}
+
+.introduccion h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.introduccion p {
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+/* Estilando el pie de página */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Compras - Mexican Restaurant</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="cajas.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="promocion.css">
+    <link rel="stylesheet" href="localizacion.css">
+    <link rel="stylesheet" href="comprar.css">
+    <link rel="stylesheet" href="scroll.css">
+    <script src="pages/crud_compras.js"></script>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Menú de navegación fijo -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Logotipo-MexicanRestaurant.png" alt="Logo" height="30">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#perfil"><img src="Icono-de-perfil.png" alt="Perfil" height="30" class="profile-icon"></a></li>
+        </ul>
+    </nav>
+
+    <section id="seccion-compras">
+        <h2>Gestión de Compras</h2>
+    
+        <!-- Tabla para mostrar las compras -->
+        <table id="tabla-compras">
+            <thead>
+                <tr>
+                    <th>ID Producto</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Tipo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las filas de compras se agregarán aquí dinámicamente -->
+            </tbody>
+        </table>
+    </section>
+    
+
+    <!-- Incluir el archivo JavaScript para manejar el CRUD -->
+    <script src="crud_compras.js"></script>
+</body>
+</html>

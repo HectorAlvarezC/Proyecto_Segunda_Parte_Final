@@ -1,0 +1,58 @@
+/* Sección del menú con cajas */
+.menu-cajas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.caja {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.caja h4{
+    color: rgb(45, 167, 45);
+}
+
+.caja:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.caja-imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.caja-titulo {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.caja-boton {
+    display: inline-block;
+    background-color: #a5755a;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.caja-boton:hover {
+    background-color: #8c4b3a;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexican Restaurant - Comida tradicional a la mexicana</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="cajas.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="promocion.css">
+    <link rel="stylesheet" href="localizacion.css">
+    <link rel="stylesheet" href="comprar.css">
+    <link rel="stylesheet" href="scroll.css">
+    <script src="crud_compras.js"></script>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Menú de navegación fijo -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Logotipo-MexicanRestaurant.png" alt="Logo" height="30">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#seccion-menu">Menú</a></li>
+            <li><a href="CRUD.html">Compras</a></li>
+            <li><a href="#perfil"><img src="Icono-de-perfil.png" alt="Perfil" height="30" class="profile-icon"></a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Banner -->
+    <div class="banner">
+        <img src="Banner-restaurantes-comida-mexicana-cdmx.jpg" alt="Deliciosa comida mexicana en un ambiente acogedor">
+        <div class="banner-text">
+            <h1>¡Bienvenido a Mexican Restaurant!</h1>
+            <p>El mejor lugar para disfrutar de comida auténtica con sabor tradicional.</p>
+        </div>
+    </div>
+
+    <!-- Sección de Promoción -->
+    <div class="seccion-promocion">
+        <!-- Imagen de la promoción -->
+        <img src="Promocion-banner-Pozole.png" alt="Promoción especial" class="promocion-imagen">
+    
+        <!-- Texto de la promoción -->
+        <div class="promocion-contenido">
+            <h2>¡Promoción Especial del Mes!</h2>
+            <p>¿Se acerca la navidad y quieres comer antes que los demás? ¡Qué esperas! Ven y disfruta de nuestros platillos hechos 100% a la mexicana.</p>
+            <!-- Botón para acceder a la sección de compras -->
+            <a href="#seccion-menu" class="promocion-boton">Ordena Ahora</a>
+        </div>
+    </div>
+    
+     <!-- Sección de Menú con ID para desplazamiento interno -->
+     <div class="container">
+        <h1 id="seccion-menu">¡Dale un vistazo a los platillos que tenemos para ti!</h1>
+        <section class="menu-cajas">
+            <!-- Paquete Mole -->
+            <div class="caja">
+                <img src="Paquete_1-Mole.png" alt="Paquete 1" class="caja-imagen">
+                <h3 class="caja-titulo">Mole</h3>
+                <h4 class="caja-titulo">Precio: $180.00 MXN</h4>
+                <button class="caja-boton" data-producto-id="1" data-nombre="Mole" data-precio="180.00" onclick="ordenarPlatillo(this.getAttribute('data-producto-id'), this.getAttribute('data-nombre'), this.getAttribute('data-precio'))">Ordenar</button>
+            </div>
+
+            <!-- Paquete Pozole -->
+            <div class="caja">
+                <img src="Paquete_2-Pozole.png" alt="Paquete 2" class="caja-imagen">
+                <h3 class="caja-titulo">Pozole</h3>
+                <h4 class="caja-titulo">Precio: $175.00 MXN</h4>
+                <button class="caja-boton" data-producto-id="2" data-nombre="Pozole" data-precio="175.00" onclick="ordenarPlatillo(this.getAttribute('data-producto-id'), this.getAttribute('data-nombre'), this.getAttribute('data-precio'))">Ordenar</button>
+            </div>
+
+            <!-- Paquete Carnitas -->
+            <div class="caja">
+                <img src="Paquete_3-Carnitas.png" alt="Paquete 3" class="caja-imagen">
+                <h3 class="caja-titulo">Carnitas</h3>
+                <h4 class="caja-titulo">Precio: $195.00 MXN</h4>
+                <button class="caja-boton" data-producto-id="3" data-nombre="Carnitas" data-precio="195.00" onclick="ordenarPlatillo(this.getAttribute('data-producto-id'), this.getAttribute('data-nombre'), this.getAttribute('data-precio'))">Ordenar</button>
+            </div>
+
+            <!-- Paquete Pescado -->
+            <div class="caja">
+                <img src="Paquete_4-Pescado_Veracruzano.png" alt="Paquete 4" class="caja-imagen">
+                <h3 class="caja-titulo">Pescado estilo Veracruz</h3>
+                <h4 class="caja-titulo">Precio: $170.00 MXN</h4>
+                <button class="caja-boton" data-producto-id="4" data-nombre="Pescado estilo Veracruz" data-precio="170.00" onclick="ordenarPlatillo(this.getAttribute('data-producto-id'), this.getAttribute('data-nombre'), this.getAttribute('data-precio'))">Ordenar</button>
+            </div>
+
+            <!-- Paquete Chiles -->
+            <div class="caja">
+                <img src="Paquete_5-Chiles_Nogada.png" alt="Paquete 5" class="caja-imagen">
+                <h3 class="caja-titulo">Chiles en Nogada</h3>
+                <h4 class="caja-titulo">Precio: $250.00 MXN</h4>
+                <button class="caja-boton" data-producto-id="5" data-nombre="Chiles en Nogada" data-precio="250.00" onclick="ordenarPlatillo(this.getAttribute('data-producto-id'), this.getAttribute('data-nombre'), this.getAttribute('data-precio'))">Ordenar</button>
+            </div>
+
+            <!-- Paquete Tlayudas -->
+            <div class="caja">
+                <img src="Paquete_6-Tlayudas.png" alt="Paquete 6" class="caja-imagen">
+                <h3 class="caja-titulo">Tlayudas</h3>
+                <h4 class="caja-titulo">Precio: $140.00 MXN</h4>
+                <button class="caja-boton" data-producto-id="6" data-nombre="Tlayudas" data-precio="140.00" onclick="ordenarPlatillo(this.getAttribute('data-producto-id'), this.getAttribute('data-nombre'), this.getAttribute('data-precio'))">Ordenar</button>
+            </div>
+        </section>        
+    </div>
+
+    <!-- Sección de Localización -->
+    <div class="seccion-localizacion">
+        <h2>Encuéntranos aquí</h2>
+        <p>Visítanos en nuestro restaurante para disfrutar de la mejor comida mexicana. ¡Te esperamos!</p>
+        <div class="mapa-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.235051378633!2d-99.16818208468149!3d19.429584986885095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3dfdf5c9d9%3A0xcafeabc123456789!2sUbicación%20Ejemplo!5e0!3m2!1ses-419!2smx!4v1694985152041!5m2!1ses-419!2smx" 
+                width="70%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <p>&copy; 2024 Mexican Restaurant. Todos los derechos reservados.</p>
+        <p>Contacto: mexinfo@mexicanrestaurant.com</p>
+    </footer>
+
+        <!-- ============================== JAVASCRIPT ============================== -->
+
+    <script>
+        // Esta es la función que manejará la solicitud al servidor
+        function ordenarPlatillo(producto_id, nombre, precio) {
+            // Preguntar por la cantidad de platillos
+            const cantidad = prompt(`¿Cuántos platillos de "${nombre}" deseas ordenar?`);
+
+            // Validar si el usuario ingresó un número válido
+            if (!cantidad || isNaN(cantidad) || cantidad <= 0) {
+                alert("Por favor, ingresa una cantidad válida.");
+                return;
+            }
+
+            // Preguntar si el pedido es para comer aquí o para llevar
+            const tipo = prompt(`¿Tu orden de "${nombre}" es para "comer aquí" o "para llevar"?`).toLowerCase();
+
+            // Validar la respuesta del usuario
+            if (!tipo || (tipo !== "comer aquí" && tipo !== "para llevar")) {
+                alert('Por favor, responde "comer aquí" o "para llevar".');
+                return;
+            }
+
+            // Crear el objeto con los datos de la orden
+            const orden = {
+                producto_id: producto_id, // ID del producto
+                nombre: nombre,           // Nombre del platillo
+                precio: parseFloat(precio), // Precio del platillo
+                cantidad: parseInt(cantidad), // Cantidad ordenada
+                tipo: tipo                // Comer aquí o para llevar
+            };
+
+            // Mostrar un mensaje de confirmación
+            alert(`Has ordenado ${orden.cantidad} platillo(s) de "${orden.nombre}" para "${orden.tipo}".`);
+
+            // Enviar los datos al servidor utilizando fetch
+            fetch('/comprar', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(orden)  // Aquí pasamos el objeto completo 'orden'
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Respuesta del servidor:', data);
+                alert('Pedido registrado exitosamente.');
+            })
+            .catch(error => {
+                console.error('Error al registrar el pedido:', error);
+                alert('Hubo un problema al registrar tu pedido. Inténtalo de nuevo.');
+            });
+        }
+    </script>        
+</body>
+</html>

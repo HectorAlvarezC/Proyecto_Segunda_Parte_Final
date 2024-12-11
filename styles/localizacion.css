@@ -1,0 +1,26 @@
+/* Estilo para la sección de localización */
+.seccion-localizacion {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    border-top: 2px solid #e0e0e0;
+    margin-top: 20px;
+}
+
+.seccion-localizacion h2 {
+    font-size: 2.5rem;
+    color: #da221c; /* Color principal */
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.seccion-localizacion p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.mapa-container iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}

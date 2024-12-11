@@ -1,0 +1,183 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ebe9dc;
+}
+
+/* Estilos del menú de navegación fijo */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.navbar .logo img {
+    margin-left: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, text-decoration 0.3s; /* Punto 1 */
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #28a745; /* Resaltar el enlace al pasar el ratón */
+}
+
+/* Icono de perfil */
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Espaciado para que el contenido no quede debajo del menú fijo */
+.container {
+    margin-top: 80px; /* Ajustar dependiendo de la altura del navbar */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+.form-container {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Punto 3 */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Punto 3 */
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Punto 3 */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.order-container {
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Punto 3 */
+    transition: all 0.2s ease-in-out; /* Hover suave */
+}
+
+li:hover {
+    background-color: #f1f1f1; /* Cambiar color al pasar el ratón */
+    transform: scale(1.02); /* Punto 3 */
+}
+
+/* Estilos para mensajes de error y éxito (Punto 4) */
+.error {
+    color: #dc3545;
+    font-size: 14px;
+}
+
+.success {
+    color: #28a745;
+    font-size: 14px;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px; /* Asegura que el pie esté separado del contenido principal */
+    border-top: 2px solid #28a745; /* Punto 5 */
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Esto es para asegurarse de que el pie de página siempre esté al final de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
